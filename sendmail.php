@@ -1,17 +1,17 @@
 <?php  
 require_once ('email.class.php'); 
 //########################################## 
-$smtpserver = "smtp.163.com";//SMTP·şÎñÆ÷ 
-$smtpserverport =25;//SMTP·şÎñÆ÷¶Ë¿Ú 
-$smtpusermail = "aa422886551@163.com";//SMTP·şÎñÆ÷µÄÓÃ»§ÓÊÏä 
-$smtpemailto = "422886557@qq.com";//·¢ËÍ¸øË­ 
-$smtpuser = "aa422886551@163.com";//SMTP·şÎñÆ÷µÄÓÃ»§ÕÊºÅ 
-$smtppass = "aa123456";//SMTP·şÎñÆ÷µÄÓÃ»§ÃÜÂë 
-$mailsubject = "PHP100²âÊÔÓÊ¼şÏµÍ³";//ÓÊ¼şÖ÷Ìâ 
-$mailbody = "<h1> ÕâÊÇÒ»¸ö²âÊÔ³ÌĞò PHP100.com </h1>";//ÓÊ¼şÄÚÈİ 
-$mailtype = "HTML";//ÓÊ¼ş¸ñÊ½£¨HTML/TXT£©,TXTÎªÎÄ±¾ÓÊ¼ş 
+$smtpserver = "smtp.163.com";//SMTPæœåŠ¡å™¨ 
+$smtpserverport =25;//SMTPæœåŠ¡å™¨ç«¯å£ 
+$smtpusermail = "aa422886551@163.com";//SMTPæœåŠ¡å™¨çš„ç”¨æˆ·é‚®ç®± 
+$smtpemailto = "422886557@qq.com";//å‘é€ç»™è° 
+$smtpuser = "aa422886551@163.com";//SMTPæœåŠ¡å™¨çš„ç”¨æˆ·å¸å· 
+$smtppass = "test001";//SMTPæœåŠ¡å™¨çš„ç”¨æˆ·å¯†ç  
+$mailsubject = "PHP100æµ‹è¯•é‚®ä»¶ç³»ç»Ÿ";//é‚®ä»¶ä¸»é¢˜ 
+$mailbody = "<h1> è¿™æ˜¯ä¸€ä¸ªæµ‹è¯•ç¨‹åº PHP100.com </h1>";//é‚®ä»¶å†…å®¹ 
+$mailtype = "HTML";//é‚®ä»¶æ ¼å¼ï¼ˆHTML/TXTï¼‰,TXTä¸ºæ–‡æœ¬é‚®ä»¶ 
 ########################################## 
-$smtp = new smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass);//ÕâÀïÃæµÄÒ»¸ötrueÊÇ±íÊ¾Ê¹ÓÃÉí·İÑéÖ¤,·ñÔò²»Ê¹ÓÃÉí·İÑéÖ¤. 
-$smtp->debug = true;//ÊÇ·ñÏÔÊ¾·¢ËÍµÄµ÷ÊÔĞÅÏ¢ 
+$smtp = new smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass);//è¿™é‡Œé¢çš„ä¸€ä¸ªtrueæ˜¯è¡¨ç¤ºä½¿ç”¨èº«ä»½éªŒè¯,å¦åˆ™ä¸ä½¿ç”¨èº«ä»½éªŒè¯. 
+$smtp->debug = true;//æ˜¯å¦æ˜¾ç¤ºå‘é€çš„è°ƒè¯•ä¿¡æ¯ 
 $smtp->sendmail($smtpemailto, $smtpusermail, $mailsubject, $mailbody, $mailtype); 
 ?>
