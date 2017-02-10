@@ -4,7 +4,7 @@ require_once ('email.class.php');
 $smtpserver = "smtp.163.com";//SMTP服务器 
 $smtpserverport =25;//SMTP服务器端口 
 $smtpusermail = "aa422886551@163.com";//SMTP服务器的用户邮箱 
-$smtpemailto = "422886557@qq.com";//发送给谁 
+$smtpemailto = "422886551@qq.com";//发送给谁 
 $smtpuser = "aa422886551@163.com";//SMTP服务器的用户帐号 
 $smtppass = "test001";//SMTP服务器的用户密码 
 $mailsubject = "PHP100测试邮件系统";//邮件主题 
